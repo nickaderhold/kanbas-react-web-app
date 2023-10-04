@@ -1,0 +1,266 @@
+/* Global Styles */
+a {
+    text-align: center;
+}
+
+/* Adjust the edit profile button column */
+#edit-profile-column {
+    text-align: right;
+    margin-top: 20px; /* You can adjust the margin as needed */
+}
+
+/* Style the Cancel Editing button */
+#edit-profile-column a.btn {
+    background-color: #f8f9fa; /* Change the background color to your preference */
+    color: #343a40; /* Change the text color to your preference */
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+/* Custom CSS to prevent overlap */
+#edit-profile-column {
+    margin-top: 30px; /* Adjust the margin-top as needed */
+}
+
+
+
+.blue-rectangle {
+    background-color: blue; 
+    height: 150px;
+    width: 100%; 
+    position: relative;
+}
+
+
+
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-body {
+    padding-top: 80px; 
+    text-align: center; 
+}
+
+.card-title {
+    margin-bottom: 0; 
+}
+
+
+.kanbas-icon {
+    color: red;
+}
+
+.top-right-button {
+    margin-right: 5px;
+}
+
+.module li {
+    margin: 0;
+}
+
+.module > .content {
+    padding-left: 50px;
+}
+
+.list-group {
+    --bs-list-group-bg: ;
+}
+
+/* Module Styles */
+.module {
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+
+/* Course Styling Table */
+#course-styling-table .card {
+    width: 255px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+#course-styling-table .card > img {
+    width: 100%;
+}
+
+/* List Group Item Styles */
+.list-group-item > a {
+    color: red;
+    text-decoration: none;
+}
+
+.list-group-item {
+    margin-top: 16px;
+}
+
+/* Kanbas Sidebar Styles */
+#kb-sb {
+    background-color: black;
+    padding: 0;
+    border-radius: 0;
+    width: 90px;
+    margin: 0;
+}
+
+#kb-sb > .active {
+    background-color: white;
+    border: 0;
+    margin: 0;
+}
+
+#kb-sb > * {
+    margin: 8px;
+    padding: 8px;
+}
+
+#kb-sb > .list-group-item {
+    margin-bottom: 0;
+}
+
+.kb-sb-item > a {
+    color: white;
+}
+
+#kb-sb > .active > a {
+    color: red;
+}
+
+/* Home Styling */
+#home-styling {
+    background-color: black;
+    width: 100%;
+}
+
+/* Sidebar Styling */
+#sidebar-styling > ul > li {
+    margin-bottom: 17px;
+    padding: 0;
+    width: 200px;
+}
+
+/* Account Icon Styling */
+#account-icon {
+    color: gray;
+}
+
+/* Account Styling */
+#account-sty {
+    padding-left: 0;
+}
+
+#more-space {
+    /* Remove the margin from the left side */
+    margin-left: 0;
+}
+
+
+#profile-screen {
+    margin-left: 70px; /* Adjust the margin-left as needed to shift the content to the right */
+}
+
+
+/* Position Edit Profile button to the right */
+#edit-profile-button {
+    float: right;
+}
+
+   /* Add this CSS to your page */
+   .list-group-item {
+    padding: 5px 0; /* Adjust the padding to your desired spacing */
+    border: none; /* Remove the border */
+  }
+
+  .list-group-item.active > a,
+.list-group-item.active > a:hover,
+.list-group-item.active > a:focus,
+.list-group-item.active > a:active {
+    background-color: transparent !important;
+    color: black !important;
+    border-color: transparent !important; /* Add this line to remove the link border */
+    outline: none !important;
+}
+
+/* Remove the blue outline from all links */
+a:focus,
+a:active {
+    outline: none;
+}
+
+  
+
+  /* Add this CSS rule to your page */
+.list-group-item a:active {
+    outline: none; /* Remove the blue highlight on click */
+}
+
+/* Adjust the margin to push the profile content down below the header */
+#profile-screen-top {
+    margin-top: 50px; /* Adjust the margin-top as needed */
+}
+
+
+
+
+
+#account-sty > .active {
+    border-left: 2px solid black;
+    margin-top: 16px;
+    padding-left: 9px;
+}
+
+/* Course Status Column Styles */
+#course-status-column > * {
+    margin-bottom: 10px;
+}
+
+/* Pencil Icon Styling */
+#pencil-icon {
+    margin-right: 0px;
+}
+
+/* K Icon Styling */
+#k-icon {
+    color: red;
+}
+
+/* URL Remove Styling */
+#url-remove-styling {
+    color: red;
+}
+
+/* Search Box Styling */
+#look-for-styling {
+    width: 300px;
+}
+
+/* Line Break Styling */
+#line-break-styling {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Buttons Container Styles */
+#buttons-container > a {
+    margin-left: 5px;
+}
+
+/* Grades Table Styling */
+#styling-grades {
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

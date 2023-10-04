@@ -1,149 +1,497 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Home Screen</title>
-  </head>
-  <body>
-    <table>
-      <tr>
-        <!-- First Column: Navigation Links -->
-        <td valign="top">
-          <ul>
-            <li><a href="profile/index.html">Account</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="home.html">Courses</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-            <!-- Add more items if needed -->
-          </ul>
-        </td>
 
-        <!-- Second Column: Home, Modules, etc. -->
-        <td valign="top">
-          <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="#">Modules</a></li>
-            <li><a href="#">Piazza</a></li>
-            <li><a href="#">Zoom Meetings</a></li>
-            <li><a href="assignments/index.html">Assignments</a></li>
-            <li><a href="#">Quizzes</a></li>
-            <li><a href="grades.html">Grades</a></li>
-            <li><a href="#">People</a></li>
-            <li><a href="#">Panopto Video</a></li>
-            <li><a href="#">Discussions</a></li>
-            <li><a href="#">Announcements</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Files</a></li>
-            <li><a href="#">Rubrics</a></li>
-            <li><a href="#">Outcomes</a></li>
-            <li><a href="#">Collaborations</a></li>
-            <li><a href="#">Syllabus</a></li>
-            <li><a href="#">Settings</a></li>
-          </ul>
-        </td>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+    integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/lib/bootstrap/js/bootstrap.js"></script>
 
-        <!-- Third Column: Buttons and Content -->
-        <td valign="top">
-          <table>
-            <tr>
-              <td><button>Collapse All</button></td>
-              <td><button>View Progress</button></td>
-              <td>
-                <div class="dropdown">
-                  <button>Publish All &#9662;</button>
-                  <div class="dropdown-content">
-                    <!-- Dropdown options here (empty for now) -->
-                  </div>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css" />
+
+
+
+    <title>Home</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-1 vh-100% text-center container list-group" id="kb-sb">
+                <div class="kb-sb-item justify-content-center list-group-item">
+                    <a href="/Kanbas/home.html"> <i class="fa-solid fa-n fa-4x" id="k-icon"></i> </a>
                 </div>
-              </td>
-              <td><button>Module</button></td>
-            </tr>
-          </table>
-   
-          <!-- Content under buttons -->
-          <ul>
-            <li>Week 0 - INTRO
-              <ul>
-                <li>LEARNING OBJECTIVES
-                  <ul>
-                    <li>Introduction to the course</li>
-                    <li>Learn what is Web Development</li>
-                    <li>Creating a development environment</li>
-                    <li>Creating a Web Application</li>
-                    <li>Getting started with the 1st assignment</li>
-                  </ul>
-                </li>
-                <li>READING
-                  <ul>
-                    <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                    <li>Full Stack Developer - Chapter 2 - Creating User Interfaces with HTML</li>
-                  </ul>
-                </li>
-                <li>SLIDES
-                  <ul>
-                    <li><a href="#">Introduction to Web Development Links to an external site</a></li>
-                    <li><a href="#">Creating an HTTP server with Node.js Links to an external site</a></li>
-                    <li><a href="#">Creating a React Application Links to an external site</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>Week 1 - HTML 
-              <ul>
-                <li>LEARNING OBJECTIVES
-                  <ul> 
-                    <li>Know how to create User Interfaces with HTML</li>
-                    <li>Keep working on assignment 1</li>
-                    <li>Deploy the assignment to Netlify</li>
-                  </ul>
-                </li>
-                <li>READING
-                  <ul>
-                    <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                    <li>Full Stack Developer - Chapter 2 - Creating User Interfaces with HTML</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </td>
+                <div class="kb-sb-item justify-content-center list-group-item" id="account-container">
+                    <i class="kanbas-icon fa-solid fa-user" id="account-icon"></i>
+                    <a class="justify-content-center text-decoration-none row stretched-link" href="/Kanbas/account.html">Account</a>
+                </div>
+                <div class="kb-sb-item list-group-item">
+                    <i class="kanbas-icon row fa-solid fa-gauge fa-lg"></i>
+                    <a class="justify-content-center text-decoration-none row stretched-link" href="/Kanbas/navbar.html">Dashboard</a>
+                </div>
+                <div class="kb-sb-item list-group-item active">
+                    <i class="kanbas-icon row fa-solid fa-book-open fa-lg"></i>
+                    <a class="justify-content-center text-decoration-none row stretched-link" href="/Kanbas/courses/index.html">Courses</a>
+                </div>
+                <div class="kb-sb-item list-group-item">
+                    <i class="kanbas-icon row fa-solid fa-calendar fa-lg"></i>
+                    <a class="justify-content-center text-decoration-none row stretched-link" href="#">Calendar</a>
+                </div>
+                <div class="kb-sb-item list-group-item">
+                    <i class="kanbas-icon row fa-solid fa-envelope fa-lg"></i>
+                    <a class="justify-content-center text-decoration-none row stretched-link" href="#">Inbox</a>
+                </div>
+                <div class="kb-sb-item list-group-item">
+                    <i class="kanbas-icon row fa-solid fa-clock-rotate-left fa-lg"></i>
+                    <a class="justify-content-center text-decoration-none row stretched-link" href="#">History</a>
+                </div>
+                <div class="kb-sb-item list-group-item">
+                    <i class="kanbas-icon row fa-solid fa-person-chalkboard fa-lg"></i>
+                    <a class="justify-content-center text-decoration-none row stretched-link" href="#">Studio</a>
+                </div>
+                <div class="kb-sb-item list-group-item">
+                    <i class="kanbas-icon row fa-solid fa-tower-cell fa-lg"></i>
+                    <a class="justify-content-center text-decoration-none row stretched-link" href="#">Commons</a>
+                </div>
+                <div class="kb-sb-item list-group-item">
+                    <i class="kanbas-icon row fa-solid fa-question fa-lg"></i>
+                    <a class="justify-content-center text-decoration-none row stretched-link" href="#">Help</a>
+                </div>
+            </div>
+            
 
-        <!-- Fourth Column: Course Status and Coming Up -->
-        <td valign="top">
-          <h1>
-            Course Status
-          </h1>
-          <br>
-          <button>Unpublish</button>
-          <button>Published</button>
-          <br>
-          <ul>
-            <li><a href="#">Import Existing Content</a></li>
-            <li><a href="#">Import from Commons</a></li>
-            <li><a href="#">Choose Home Page</a></li>
-            <li><a href="#">View Course Stream</a></li>
-            <li><a href="#">New Announcement</a></li>
-            <li><a href="#">New Analytics</a></li>
-            <li><a href="#">View Course Notifications</a></li>
-          </ul>
+        
+            <div class="container row col-11" id="fill-space">
+                <div class="container d-none d-md-none d-lg-block">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb float-start">
+                            <li class="breadcrumb-item"><a href="/Kanbas/home.html">CS1223.1213.1231</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Home</li>
+                        </ol>
+                    </nav>
+                    <button class="btn btn-light float-end"><i class="fa-solid fa-glasses"></i> Student
+                        View</button>
+                </div>
 
-          <h1>
-            Coming Up
-          </h1>
-          <br>
-          <a href="#">View Calendar</a>
-          <ul>
-            <li><a href="#">Lecture 1</a></li>
-            <li><a href="#">Lecture 2</a></li>
-            <li><a href="#">Lecture 3</a></li>
-          </ul>
-        </td>
-      </tr>
-    </table>
-  </body>
+                <div class="d-block d-lg-none container d-block d-lg-none" id="home-styling">
+
+                    <div class="dropdown float-start" id="kanbas-navigation-dropdown">
+                        <i class="fa-solid fa-bars dropdown-toggle fa-lg" data-bs-toggle="dropdown"
+                            aria-expanded="false" id="ddi"></i>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="/Kanbas/home.html">Home</a></li>
+                            <li><a class="dropdown-item" href="/Kanbas/account.html">Account</a></li>
+                            <li><a class="dropdown-item" href="/Kanbas/navbar.html">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="/Kanbas/navbar.html">Courses</a></li>
+                            <li><a class="dropdown-item" href="">Calendar</a></li>
+                            <li><a class="dropdown-item" href="">Calendar</a></li>
+                            <li><a class="dropdown-item" href="">Inbox</a></li>
+                            <li><a class="dropdown-item" href="">History</a></li>
+                            <li><a class="dropdown-item" href="">Studio</a></li>
+                            <li><a class="dropdown-item" href="">Commons</a></li>
+                            <li><a class="dropdown-item" href="">Help</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown float-end">
+                        <i class="fa-solid fa-chevron-down" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="ddi"></i>
+                        <ul class="dropdown-menu">
+                            <li class="list-group-item active dropdown-item">
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Modules</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Piazza</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Zoom Meetings</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="/Kanbas/Assignments/index.html">Assignments</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Quizzes</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="/Kanbas/grades.html">Grades</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">People</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Panopto Video</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Discussions</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Announcements</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Pages</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Files</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Rubrics</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Outcomes</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Collaborations</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Syllabus</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Settings</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <hr />
+
+
+                <div class="col-2 justify-content-start d-none d-md-none d-lg-block" id="sidebar-styling">
+                    <ul class="list-group-flush" id="account-sty">
+                        <li class="list-group-item active">
+                            <a href="home.html">Home</a>
+                        </li>
+                        <li class="list-group-item ">
+                            <a href="#">Modules</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Piazza</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Zoom Meetings</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/Kanbas/Assignments/index.html">Assignments</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Quizzes</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/Kanbas/grades.html">Grades</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">People</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Panopto Video</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Discussions</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Announcements</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Pages</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Files</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Rubrics</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Outcomes</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Collaborations</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Syllabus</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Settings</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-8 container" id="modules-content-container">
+
+                    <div class="container-fluid row">
+                        <div class="container" id="buttons-container">
+
+                            <a class="top-right-button btn btn-light float-end" href="" role="button">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+
+                            <a class="top-right-button btn btn-danger float-end" href="" role="button">
+                                <i class="fa-solid fa-plus"></i> Module
+                            </a>
+                            <div class="top-right-button dropdown float-end">
+                                <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">yo</a></li>
+                                    <li><a class="dropdown-item" href="#">yo</a></li>
+                                    <li><a class="dropdown-item" href="#">lol</a></li>
+                                </ul>
+                            </div>
+                            <a class="top-right-button btn btn-light float-end" href="" role="button">
+                                View Progress
+                            </a>
+                            <a class="top-right-button btn btn-light float-end" href="" role="button">
+                                Collapse All
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="container-fluid row">
+
+                        <hr id="line-break-styling" />
+
+                        <div class="row">
+                            <ul class="module list-group border border-gray mb-0">
+
+                                <li class="list-group-item list-group-item-secondary gray-outline">WEEK 0 - INTRO</li>
+                                <ul class="module list-group border border-gray mb-0">
+                                <li class="list-group-item gray-outline">LEARNING OBJECTIVES
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                                </ul>
+
+                                <ul class="module list-group border border-gray mb-0">
+                                <li class="list-group-item content gray-outline">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                                </ul>
+
+                                <ul class="module list-group border border-gray mb-3">
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                            </ul>
+
+                            <ul class="module list-group border border-gray mb-0">
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                            </ul>
+
+
+                            <ul class="module list-group border border-gray mb-0">
+                                <li class="list-group-item">READING
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                            </ul>
+
+                            <ul class="module list-group border border-gray mb-0">
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                            </ul>
+
+                                <ul class="module list-group border border-gray mb-0">
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                            </ul>
+
+                                <ul class="module list-group border border-gray mb-0">
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+
+                                <ul class="module list-group border border-gray mb-0">
+                                <li class="list-group-item">SLIDES
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                            </ul>
+
+                                <ul class="module list-group border border-gray mb-0">
+                                <li class="list-group-item content">
+                                    <a href="#">Link</a>
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                            </ul>
+
+                                <ul class="module list-group border border-gray mb-0">
+                                <li class="list-group-item content">
+                                    <a href="#">Link</a>
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                            </ul>
+
+                                <ul class="module list-group border border-gray mb-0">
+                                <li class="list-group-item content">
+                                    <a href="#">Link</a>
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                            </ul>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <ul class="module list-group">
+                                <ul class="module list-group border border-gray mb-0">
+                                <li class="list-group-item list-group-item-secondary">WEEK 0 - INTRO</li>
+                                </ul>
+
+
+                                <ul class="module list-group border border-gray mb-0">
+
+                                <li class="list-group-item">LEARNING OBJECTIVES
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                                </ul>
+
+
+                                <ul class="module list-group border border-gray mb-0">
+
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                                </ul>
+
+
+                                <ul class="module list-group border border-gray mb-0">
+
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                                </ul>
+
+
+                                <ul class="module list-group border border-gray mb-0">
+
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                                </ul>
+
+
+                                <ul class="module list-group border border-gray mb-0">
+
+                                <li class="list-group-item">READING
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                                </ul>
+
+
+                                <ul class="module list-group border border-gray mb-0">
+
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                                </ul>
+
+
+                                <ul class="module list-group border border-gray mb-0">
+
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                                </ul>
+
+
+
+                                <ul class="module list-group border border-gray mb-0">
+
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                                </ul>
+
+
+                                <ul class="module list-group border border-gray mb-0">
+
+                                <li class="list-group-item">SLIDES
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                                </ul>
+
+
+                                <ul class="module list-group border border-gray mb-0">
+
+                                <li class="list-group-item content">
+                                    <a href="#">Link</a>
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                                </ul>
+
+
+                                <ul class="module list-group border border-gray mb-0">
+
+                                <li class="list-group-item content">
+                                    <a href="#">Link</a>
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                                </ul>
+
+
+
+                                <ul class="module list-group border border-gray mb-0">
+
+                                <li class="list-group-item content">
+                                    <a href="#">Link</a>
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d027;"></i>
+                                </li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-2  d-none d-lg-none d-xl-block row" id="course-status-column">
+                    <p>Course Status</p>
+
+                    <div class="container row">
+                        <button class="col-6 btn btn-sm btn-light float-start">Unpublish</button>
+                        <button class="col-6 btn btn-sm btn-light float-end">Published</button>
+
+                    </div>
+
+                    <button class="btn btn-sm btn-light">Import Existing Content</button>
+                    <button class="btn btn-sm btn-light">Import From Commons</button>
+                    <button class="btn btn-sm btn-light">Choose Home Page</button>
+                    <button class="btn btn-sm btn-light">View Course Stream</button>
+                    <button class="btn btn-sm btn-light">New Announcement</button>
+                    <button class="btn btn-sm btn-light">New Analytics</button>
+                    <button class="btn btn-sm btn-light">View Course Notifications</button>
+
+                    <b>To Do</b>
+                    <hr />
+                    <p>Filler</p>
+
+                    <b>Coming Up</b>
+                    <hr />
+                    <p>Yooooo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
 </html>
+
