@@ -1,0 +1,36 @@
+#kb-navsidebar {
+    background-color: black !important;
+    height: 110vh;
+    width: 140px;
+}
+
+#kb-navsidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.list-group-item.active {
+    z-index: 2;
+    color: red;
+    background-color: white !important;
+}
+
+.active * {
+    color: red !important;
+}
+
+.kanbas-icon {
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: red;
+}
+
+#kb-navsidebar>.list-group-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#account-nav i {
+    color: lightgray;
+}

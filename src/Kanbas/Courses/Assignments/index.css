@@ -1,0 +1,16 @@
+.card-header>button {
+    text-decoration: none;
+    color: black;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+#a-list>.list-group-item {
+    border-bottom: 2px solid gray;
+    padding: 15px;
+}
+
+
+

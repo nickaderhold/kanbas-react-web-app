@@ -1,0 +1,17 @@
+.button-tr {
+    margin-left: 0; /* Set margin to zero */
+    padding: 0; /* Set padding to zero */
+}
+
+.card-header>button {
+    text-decoration: none;
+    color: black;
+}
+
+#buttons-container > a {
+    margin-left: 0; /* Set margin to zero */
+    padding: 0; /* Set padding to zero */
+}
+
+
+
