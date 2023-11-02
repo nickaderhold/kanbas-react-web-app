@@ -1,0 +1,68 @@
+/* Common styles for button containers */
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Styles for individual buttons */
+.b-tr {
+    margin-right: 6px;
+    padding: 10px 15px;
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.b-tr.red {
+    background-color: red;
+    color: white;
+}
+
+/* Styles for the container of buttons */
+#buttons-container {
+    margin-left: 11px;
+    margin-bottom: 11px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Styles for the ellipsis button */
+.ellipsis-vert {
+    margin-right: 9px;
+    color: red;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Styles for the breadcrumb */
+#breadcrumb > * {
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+
+
+/* Styles for the dropdown button */
+.btn-dropdown-tog {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styles for the dropdown menu items */
+.dropdown-item {
+    color: #333;
+}
+
+/* Styles for the "+ Module" button */
+.classTRBut.red {
+    background-color: red;
+    color: white;
+}
+
+

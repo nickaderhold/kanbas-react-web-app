@@ -1,0 +1,15 @@
+#a-nav-lis a {
+    color: red;
+    margin-bottom: 10px;
+}
+
+#a-nav-lis>.active {
+    border-left: 3px solid black;
+    padding-left: px;
+}
+
+
+
+#a-nav-lis {
+    margin-left: 20px;
+}
