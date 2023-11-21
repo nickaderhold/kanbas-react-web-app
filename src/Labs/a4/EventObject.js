@@ -12,7 +12,7 @@ function EventObject() {
       <button
         id="event-button"
         onClick={(e) => handleClick(e)}
-        className="btn-primal"
+        className="btn btn-primary"
       >
         Display Event Object
       </button>

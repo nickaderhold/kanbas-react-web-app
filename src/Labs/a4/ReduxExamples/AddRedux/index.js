@@ -26,7 +26,7 @@ function AddRedux() {
       />
       <button
         onClick={() => dispatch(add({ a, b }))}
-        className="btn-primal"
+        className="btn btn-primary"
       >
         Add Redux
       </button>
