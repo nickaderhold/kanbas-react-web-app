@@ -1,6 +1,7 @@
-import EncodingParametersInURLs from "./EncodingParametersInURLs";
+import React from 'react';
 import WorkingWithArrays from "./WorkingWithArrays";
 import WorkingWithObjects from "./WorkingWithObjects";
+import EncodingParametersInURLs from "./EncodingParametersInURLs";
 
 function Assignment5() {
   return (
@@ -8,7 +9,7 @@ function Assignment5() {
       <h1>Assignment 5</h1>
       <div className="list-group">
         <a
-          href="https://kanbas-node-server-app-az4u.onrender.com/a5/welcome"
+          href="http://localhost:4000/a5/welcome"
           className="list-group-item"
         >
           Welcome
@@ -22,3 +23,4 @@ function Assignment5() {
   );
 }
 export default Assignment5;
+
